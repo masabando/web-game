@@ -1,12 +1,47 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100svh;
   background: #333;
   width: 100vw;
+  touch-action: none;
+  font-family: "DotGothic16", sans-serif;
 }
 
-#talkWindow {
+#a-button,
+#b-button {
+  position: fixed;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  overflow: hidden;
+  color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: manipulation;
+  font-family: "DotGothic16", sans-serif;
+}
+
+#a-button {
+  background: rgba(255, 100, 100, 0.5);
+}
+
+#b-button {
+  background: rgba(100, 100, 255, 0.5);
+}
+
+
+#messageBox {
   position: fixed;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.5);
@@ -14,12 +49,14 @@ html, body {
   display: none;
 }
 
-#talkName {
+#messageBox-Name {
   color: #aaf;
-  font-size: 1.3em;
+  font-size: 4vw;
   font-weight: bold;
 }
-#talkText {
-  margin-top: 0.5rem;
+
+#messageBox-Text {
+  margin-top: 1vw;
+  font-size: 3.5vw;
   color: #fff;
 }

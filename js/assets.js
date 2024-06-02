@@ -1,6 +1,6 @@
 const Assets = {
   character: {
-    player: "assets/character/player.png",
+    player: "assets/character/neko_white.png",
     npc: {
       woman: "assets/character/npc_woman.png",
     }
